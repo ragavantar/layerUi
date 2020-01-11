@@ -1,0 +1,47 @@
+.prod-card {
+    width: 210px;
+    height: 280px;
+    position: relative;
+    display: inline-block;
+
+    ion-card-header{
+        padding-top: 5px;
+        padding-bottom: 5px;  
+        ion-card-subtitle{
+            font-size: 12px; 
+        }
+        ion-card-title{
+            font-size: 14px;
+            margin-top: 2px; 
+        }
+    }
+
+    .wishlist {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+    .cart {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+
+    .buy{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: whitesmoke;
+        .color, .size {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background: red;
+            margin: 5px;
+        }
+    }
+}
