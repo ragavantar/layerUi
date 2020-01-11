@@ -10,6 +10,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+
+  isDesktop : boolean;
+  
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -22,6 +25,9 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
+      // check desktop 
+      this.isDesktop = this.platform.is('desktop') ? true : false;
     });
   }
 }

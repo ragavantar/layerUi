@@ -1,0 +1,16 @@
+<!-- Desktop layout -->
+
+<div *ngIf="isDesktop">
+
+  <ion-content padding>
+    Desktop
+  </ion-content>
+</div>
+
+<!-- Mobile layout -->
+<div *ngIf="!isDesktop">
+
+  <ion-content padding>
+    Not Desktop
+  </ion-content>
+</div>
