@@ -1,5 +1,6 @@
 .prod-card {
     width: 210px;
+    // width: 20%;
     height: 280px;
     position: relative;
     display: inline-block;
@@ -44,4 +45,10 @@
             margin: 5px;
         }
     }
+}
+
+
+:host-context(.plt-mobile) .prod-card {
+    width: 50%;
+    height: auto;
 }

@@ -1,7 +1,7 @@
 <ion-app>
   <div [class.desktop]="isDesktop">
-<app-header-desktop></app-header-desktop>
-<app-header-mobile></app-header-mobile>
+    <app-header-desktop *ngIf="isDesktop"></app-header-desktop>
+    <app-header-mobile *ngIf="!isDesktop"></app-header-mobile>
   </div>
   <div class="main-content">
     <ion-router-outlet></ion-router-outlet>

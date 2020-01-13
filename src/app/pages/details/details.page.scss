@@ -1,0 +1,46 @@
+.details-section > div {
+    margin: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cat {
+    font-size: 20px;
+}
+
+.desc {
+    font-size: 18px;
+}
+
+.qty {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cart {
+    font-size: 24px;
+}
+
+.wishlist {
+    font-size: 24px;
+}
+
+.colors div, .sizes div{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: aliceblue;
+    margin: 5px;
+    border-radius: 5px;
+
+    &.active {
+        border: 1px solid pink;
+    }
+}

@@ -1,3 +1,100 @@
-<p>
-  header-mobile works!
-</p>
+<!-- top nav -->
+<div class="nav-top-mobile">
+  <div class="left">
+    <div (click)="toggleSidebar()">
+      <ion-icon name="menu"></ion-icon>
+    </div>
+    <div class="logo">
+      Layer
+    </div>
+  </div>
+  <div class="right">
+    <div>
+      <ion-icon name="heart"></ion-icon>
+    </div>
+    <div>
+      <ion-icon name="cart"></ion-icon>
+    </div>
+    <div>
+      <ion-icon name="search"></ion-icon>
+    </div>
+  </div>
+</div>
+
+<!-- side nav -->
+<div class="nav-side-mobile" [class.active]="sidebar">
+  <div class="bar">
+    <div class="profile">
+      <ion-item>
+        <ion-avatar slot="start">
+          <!-- <img src="./avatar-finn.png"> -->
+          <ion-icon name="contact"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>Hello</h2>
+          <h3>Login or Register</h3>
+        </ion-label>
+      </ion-item>
+    </div>
+
+    <div class="menu">
+      <ion-list *ngIf="catalog == 'menu'">
+        <ion-item (click)="showCatalog('men')">
+          <ion-icon slot="start" name="man"></ion-icon>
+          <ion-label>Men</ion-label>
+        </ion-item>
+        <ion-item (click)="showCatalog('women')">
+          <ion-icon slot="start" name="woman"></ion-icon>
+          <ion-label>Women</ion-label>
+        </ion-item>
+        <ion-item (click)="showCatalog('menu')">
+          <ion-icon slot="start" name="logo-buffer"></ion-icon>
+          <ion-label>coming soon</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list *ngIf="catalog == 'men'">
+        <ion-item (click)="showCatalog('menu')">
+          <ion-icon slot="start" name="man"></ion-icon>
+          <ion-label>Back</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="man"></ion-icon>
+          <ion-label>Men 2</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="logo-buffer"></ion-icon>
+          <ion-label>coming soon</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list *ngIf="catalog == 'women'">
+        <ion-item (click)="showCatalog('menu')">
+          <ion-icon slot="start" name="woman"></ion-icon>
+          <ion-label>Back</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="woman"></ion-icon>
+          <ion-label>Women</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="logo-buffer"></ion-icon>
+          <ion-label>coming soon</ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div class="bottom">
+      <div class="social">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </div>
+      <div class="social">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+      <div class="social">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </div>
+    </div>
+  </div>
+  <div class="cover" (click)="toggleSidebar()"></div>
+</div>

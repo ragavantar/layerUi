@@ -1,0 +1,102 @@
+.nav-top-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: pink;
+    z-index: 999;
+    padding: 5px 5px 5px 5px;
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    div {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+
+ion-icon {
+    font-size: 25px;
+}
+
+
+.nav-side-mobile {
+    .bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        left: -100%;
+        bottom: 0;
+        background: aliceblue;
+        width: 70%;
+        padding: 20px 0;
+        z-index: 999;
+        transition: all 1s;
+    }
+
+    &.active {
+        .bar {
+            left: 0;
+        }
+
+        .cover {
+            opacity: 0.3;
+            display: block;
+        }
+    }
+
+    .bottom {
+        position: absolute;
+        bottom: 20px;
+
+        .social {
+            display: inline-block;
+            margin: 10px;
+        }
+    }
+
+    .menu {
+        margin: 20px 0;
+    }
+
+    .category-content {
+        display: none;
+        opacity: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: grey;
+        width: 100%;
+        transition: opacity 0.75s;
+    }
+
+    .cover {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        opacity: 0;
+        z-index: 998;
+    }
+}
+
+
+.category:hover {
+    .category-content {
+        display: block;
+        opacity: 1;
+    }
+}

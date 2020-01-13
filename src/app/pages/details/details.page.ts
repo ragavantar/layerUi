@@ -12,4 +12,11 @@ export class DetailsPage implements OnInit {
   ngOnInit() {
   }
 
+  slideOpts = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    autoplay: true,
+    loop: true
+  };
+
 }

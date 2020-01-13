@@ -9,6 +9,18 @@ export class HeaderMobileComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
+
+  catalog: string = 'menu';
+  sidebar: boolean = false;
+
+  showCatalog(val) {
+    this.catalog = val;
+    console.log(val)
+  }
+
+  toggleSidebar() {
+    this.sidebar = !this.sidebar;
+  }
 
 }

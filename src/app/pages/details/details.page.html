@@ -1,9 +1,61 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>details</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <ion-row>
+    <ion-col sizeSm="4">
+      <ion-slides [options]="slideOpts" pager="true" #slides>
+        <ion-slide>
+          <ion-img
+            src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2175460/2017/10/30/11509359669996-Kook-N-Keech-Marvel-Men-Sweatshirts-4391509359669829-1.jpg">
+          </ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img
+            src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2175460/2017/10/30/11509359669974-Kook-N-Keech-Marvel-Men-Sweatshirts-4391509359669829-2.jpg">
+          </ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img
+            src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2175460/2017/10/30/11509359669950-Kook-N-Keech-Marvel-Men-Sweatshirts-4391509359669829-3.jpg">
+          </ion-img>
+        </ion-slide>
+      </ion-slides>
+      <img
+        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2175460/2017/10/30/11509359669950-Kook-N-Keech-Marvel-Men-Sweatshirts-4391509359669829-3.jpg" />
+      <img
+        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2175460/2017/10/30/11509359669950-Kook-N-Keech-Marvel-Men-Sweatshirts-4391509359669829-3.jpg" />
+      <img
+        src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2175460/2017/10/30/11509359669950-Kook-N-Keech-Marvel-Men-Sweatshirts-4391509359669829-3.jpg" />
+    </ion-col>
+    <ion-col class="details-section">
+      <div class="title"><h1>Avengesrs Hoodie</h1></div>
+      <div class="cat">Men's wear</div>
+      <div class="colors">
+        <h3>Colours : </h3>
+        <div></div>
+        <div class="active"></div>
+        <div></div>
+      </div>
+      <div class="sizes">
+          <h3>Size : </h3>
+        <div class="active">S</div>
+        <div>M</div>
+        <div>L</div>
+      </div>
+      <div class="qty">
+      <h3>Quantity : </h3>
+        5
+      </div>
+      <div class="price">Rs: 500</div>
+      <div class="cart">Add to Cart</div>
+      <div class="wishlist">Add to Wishlist</div>
+      <ion-row>
+          <ion-col>
+            <ion-button expand="block" type="submit">Add to Cart</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand="block" fill="outline">Add to Wishlist</ion-button>
+          </ion-col>
+        </ion-row>
+      <div class="desc">hello every one this is a sample. main picturee soon</div>
+    </ion-col>
+  </ion-row>
 </ion-content>
